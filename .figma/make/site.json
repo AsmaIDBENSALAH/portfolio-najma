@@ -1,0 +1,12 @@
+{
+  "title": "Najma Farrich — Pâtissière | Portfolio professionnel",
+  "description": "Découvrez le portfolio de Najma Farrich, pâtissière en formation à l’École Ducasse — ENSP, ses créations, compétences et expériences professionnelles.",
+  "language": "fr",
+  "robots": {
+    "index": true
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}

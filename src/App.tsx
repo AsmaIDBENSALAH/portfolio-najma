@@ -46,7 +46,7 @@ const skillGroups = [
 ]
 
 const experiences = [
-  { date: 'Oct. 2026', place: 'Paris, France', company: 'Pâtisserie X', role: 'Stagiaire en pâtisserie', missions: ['Stage réalisé dans une pâtisserie à Paris.', 'Établissement et missions détaillées à compléter.'], future: true },
+  { date: 'Oct. 2026', place: 'Paris, France', company: 'Boutique Delmontel', role: 'Stagiaire en pâtisserie', missions: ['Préparation des produits pâtissiers', 'Présentation et finition', 'Gestion des matières premières', 'Participation à la production quotidienne'], future: true },
   { date: 'Nov. 2024 — Mars 2025', place: 'Agadir, Maroc', company: 'Nijad Food', role: 'Stagiaire au service de pâtisserie', missions: ['Préparation des produits pâtissiers', 'Présentation et finition', 'Gestion des matières premières', 'Participation à la production quotidienne'] },
   { date: 'Mars — Sept. 2024', place: 'Agadir, Maroc', company: 'Café Boulangerie & Pâtisserie', role: 'Stagiaire au service de pâtisserie', missions: ['Préparation des ingrédients', 'Réalisation des préparations', 'Décoration et finition', 'Organisation du poste de travail'] },
   { date: 'Déc. 2022 — Oct. 2023', place: 'Agadir, Maroc', company: 'Les Jardins d’Agadir', role: 'Stagiaire au service de pâtisserie', missions: ['Préparation et pesée', 'Préparations pâtissières', 'Présentation et finition', 'Gestion des matières premières'] },
@@ -156,7 +156,7 @@ export default function App() {
 
         <section className="experience section" id="parcours">
           <SectionHeading eyebrow="05 · Expérience" title="Un parcours ancré dans la pratique." intro="Au fil de mes expériences en hôtellerie, boulangerie et pâtisserie, j’ai renforcé ma rigueur, mon organisation et ma capacité d’adaptation aux exigences des cuisines professionnelles." />
-          <div className="timeline">{experiences.map((item, index) => <article className="timeline-row" key={item.company}><div className="timeline-index">{String(index + 1).padStart(2, '0')}</div><div className="timeline-date">{item.date}<span>{item.place}</span></div><div className="timeline-main"><h3>{item.company}</h3><p className="role">{item.role}</p>{item.future && <span className="to-complete">Informations à compléter</span>}</div><ul>{item.missions.map((mission) => <li key={mission}>{mission}</li>)}</ul></article>)}</div>
+          <div className="timeline">{experiences.map((item, index) => <article className="timeline-row" key={item.company}><div className="timeline-index">{String(index + 1).padStart(2, '0')}</div><div className="timeline-date">{item.date}<span>{item.place}</span></div><div className="timeline-main"><h3>{item.company}</h3><p className="role">{item.role}</p>{item.future }</div><ul>{item.missions.map((mission) => <li key={mission}>{mission}</li>)}</ul></article>)}</div>
         </section>
 
         <section className="education section">

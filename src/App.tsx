@@ -143,8 +143,7 @@ export default function App() {
             <div className="hero-actions"><a className="button primary" href="#creations">Découvrir mes créations <Arrow /></a><a className="text-link" href="#contact">Me contacter <Arrow diagonal /></a></div>
           </div>
           <div className="hero-image-wrap">
-            <img src="/creations/entremets-chocolat-hero.webp" alt="Entremets au chocolat réalisé par Najma Farrich" />
-            <span className="image-label">Création de Najma · Entremets chocolat</span>
+            <img src={`${import.meta.env.BASE_URL}creations/entremets-chocolat-hero.webp`} alt="Entremets au chocolat réalisé par Najma Farrich"/>            <span className="image-label">Création de Najma · Entremets chocolat</span>
             <div className="hero-stamp"><span>En formation</span><strong>ENSP</strong><span>Yssingeaux · France</span></div>
           </div>
           <div className="availability"><span className="pulse" /><p><strong>Disponible</strong> Stage & opportunités professionnelles en France</p></div>
@@ -156,7 +155,7 @@ export default function App() {
         </section>
 
         <section className="about section" id="a-propos">
-          <div className="about-image"><img src="/creations/macarons-02.webp" alt="Macarons en cours de garnissage pendant une séance de travail" loading="lazy" /><p>En cours de réalisation — photographie fournie par Najma<br />À remplacer par son portrait professionnel lorsqu’il sera disponible</p></div>
+          <div className="about-image"> <img src={`${import.meta.env.BASE_URL}creations/macarons-02.webp`} alt="Macarons en cours de garnissage pendant une séance de travail" loading="lazy"/><p>En cours de réalisation — photographie fournie par Najma<br />À remplacer par son portrait professionnel lorsqu’il sera disponible</p></div>
           <div className="about-copy">
             <SectionHeading eyebrow="02 · À propos" title="Une passion pour la pâtisserie, un engagement pour l’excellence." />
             <p className="lead">Actuellement en formation à l’École Ducasse — École Nationale Supérieure de Pâtisserie à Yssingeaux, je perfectionne chaque jour mon geste, ma créativité et mon sens du détail.</p>

@@ -143,7 +143,7 @@ export default function App() {
             <div className="hero-actions"><a className="button primary" href="#creations">Découvrir mes créations <Arrow /></a><a className="text-link" href="#contact">Me contacter <Arrow diagonal /></a></div>
           </div>
           <div className="hero-image-wrap">
-            <img src={`${import.meta.env.BASE_URL}creations/entremets-chocolat-hero.webp`} alt="Entremets au chocolat réalisé par Najma Farrich"/>            <span className="image-label">Création de Najma · Entremets chocolat</span>
+            <img src={`${import.meta.env.BASE_URL}creations/entremets-chocolat-hero.webp`} alt="Royal réalisé par Najma Farrich"/>            <span className="image-label">Création de Najma · Entremets chocolat</span>
             <div className="hero-stamp"><span>En formation</span><strong>ENSP</strong><span>Yssingeaux · France</span></div>
           </div>
           <div className="availability"><span className="pulse" /><p><strong>Disponible</strong> Stage & opportunités professionnelles en France</p></div>
